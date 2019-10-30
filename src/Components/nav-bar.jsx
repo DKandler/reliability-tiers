@@ -7,9 +7,9 @@ const NavBar = (props) => {
             <ul>
                 <li><Link to = '/nbatiers'>NBA</Link></li>
                 <li><Link to = '/soccertiers'>Soccer</Link></li>
-                <li><a>NFL</a></li>
-                <li><a>MLB</a></li>
-                <li><a>NHL</a></li>
+                <li><Link to = '/nfltiers'>NFL</Link></li>
+                <li><Link to = '/mlbtiers'>MLB</Link></li>
+                <li><Link to = '/nhltiers'>NHL</Link></li>
             </ul>
         </div>
     )

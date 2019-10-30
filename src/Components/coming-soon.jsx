@@ -1,0 +1,22 @@
+import React from 'react';
+
+const ComingSoon = () => {
+    return(
+    
+    <div class="bgimg">
+        <div class="topleft">
+                <p>Logo</p>
+        </div>
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr></hr>
+            <p>35 days</p>
+        </div>
+        <div class="bottomleft">
+            <p>Some text</p>
+        </div>
+    </div>
+    )
+} 
+
+export default ComingSoon;

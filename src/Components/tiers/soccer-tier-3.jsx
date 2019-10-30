@@ -6,10 +6,10 @@ export default function SoccerTier1(props) {
     return (
       <Table>
         <Tbody>
-            <Tr>
-              <Td>Woj</Td>
-              <Td>@Woj</Td>
-            </Tr>
+          <Tr>
+          <Td>Twellman</Td>
+              <Td>@twell</Td>
+          </Tr>
         </Tbody>
       </Table>
     )

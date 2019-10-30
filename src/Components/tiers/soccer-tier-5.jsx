@@ -7,10 +7,11 @@ export default function SoccerTier1(props) {
       <Table>
         <Tbody>
           <Tr>
-            <Td>Woj</Td>
-            <Td>@Woj</Td>
+            <Td>Twellman</Td>
+            <Td>@twell</Td>
           </Tr>
         </Tbody>
+       
       </Table>
     )
   }

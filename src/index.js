@@ -1,10 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import NBATiers from './Components/nba-tiers';
+import SoccerTiers from './Components/soccer-tiers';
+import Mainpage from './Components/main-page';
 import * as serviceWorker from './serviceWorker';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const router = (
+    <Router>
+        <div>
+
+            <Route path='/' exact component={Mainpage} />
+            <Route path='/nbatiers' component={NBATiers} />
+            <Route path='/soccertiers' component={SoccerTiers} />
+
+        </div>
+    </Router>
+
+
+)
+
+ReactDOM.render(router, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

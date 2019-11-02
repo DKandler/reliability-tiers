@@ -14,8 +14,8 @@ class Tier1 extends React.Component {
         render() {
             var sources = this.state.sources.map(function(source) {
               return (
-                <li key="{source.Name}">
-                  <a href={source.twitter}>{source.Name}</a>
+                <li key="{source.name}">
+                  <a href={source.twitter}>{source.name}</a>
                 </li>
               );
             });

@@ -1,11 +1,10 @@
-.App {
-  text-align: center;
+
+.body{
+  background: #FAFAFA;
 }
 
 .NavBar{
-  border: solid black 2px;
   width: 80%;
-  background: gray; 
   display: flex;
   list-style: none;
   margin: auto;
@@ -22,7 +21,6 @@
 
 .NavBar li{
   padding: 2px 10px 2px 10px;
-  border: black solid;
   list-style: none;
   margin: auto;
   letter-spacing: 2px;

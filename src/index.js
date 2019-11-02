@@ -11,7 +11,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 const router = (
     <Router>
-        <div>
+        <div className = "body">
 
             <Route path='/' exact component={Mainpage} />
             <Route path='/nbatiers' component={NBATiers} />

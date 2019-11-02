@@ -4,6 +4,8 @@ import withFirebaseAuth from 'react-with-firebase-auth'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from './firebase';
+import { Link } from 'react-router-dom';
+import '../header.css'
 
 
 class Header extends React.Component {
@@ -15,21 +17,26 @@ class Header extends React.Component {
     } = this.props;
   
     return (
-      <div>
-        <header>
-          <h1>Reliability Tiers</h1>
-          <p>see if your source is reliable</p>
+      <div className = 'header-container'>
+  
+          <div >
+            <h1><Link className = 'title' to = '/'>Reliability Tiers</Link></h1>
+            <p className = "title-text">See if your source is reliable.</p>
+          </div>
+        <div className = 'welcome-container'>
           {
-        user 
-          ? <p>Hello, {user.displayName}</p>
+          user 
+          ? <p>Hello, <strong>{user.displayName}</strong> </p>
           : <p>Please sign in.</p>
       }
+       
+       
       {
         user
-          ? <button onClick={signOut}>Sign out</button>
+          ? <button  onClick={signOut}>Sign out</button>
           : <button onClick={signInWithGoogle}>Sign in with Google</button>
       }
-      </header>
+      </div>
         </div>
        
     );

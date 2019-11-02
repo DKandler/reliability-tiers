@@ -1,0 +1,50 @@
+.header-container{
+    background-color: #E8F1F5;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #004a7c;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.welcome-container{
+    margin: 13px;
+}
+
+.welcome-container button{
+    background: transparent;
+	color: inherit;
+	text-decoration: none;
+	transition: all 200ms ease-in;
+    display: inline-block;
+    border: #004a7c solid 1px;
+    padding: 10px 15px 10px 15px;
+    float: right;
+
+}
+
+.welcome-container button:hover{
+    background: #004A7C;
+    color:#FAFAFA;
+
+}
+
+.title-text{
+    margin: 13px;
+    margin-top: 0px;
+    font-family: 'Rokkitt', serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.title{
+    font-family: 'Rokkitt', serif;
+    text-decoration: none;
+    color: #004a7c;
+    padding: 13px;
+    font-size: 1.5em;
+    order: 1;
+}

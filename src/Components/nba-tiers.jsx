@@ -5,12 +5,14 @@ import NBATier3 from './tiers/nba-tier-3';
 import NBATier4 from './tiers/nba-tier-4';
 import NBATier5 from './tiers/nba-tier-5';
 import TableHeader from './table-header';
-
+import Header from './main-header';
+import NavBar from './nav-bar';
 
 export default function NBATiers(props) {
     return (
         <div>
-            <TableHeader />
+            <Header />
+            <NavBar />
             <NBATier1 />
             <NBATier2 />
             <NBATier3 />

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../tiers.css'
 import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
 import firebaseConfig from '../firebase';
 import * as firebase from 'firebase/app';
@@ -18,15 +19,18 @@ class NBATier1 extends React.Component {
             var sources = this.state.sources.map(function(source) {
               return (
                 <li key="{source.name}">
-                  <a href={source.twitter}>{source.name}</a>
+                  <a className = 'tierItem' href={source.twitter}>{source.name}</a>
                 </li>
               );
             });
         
             return (
-                <ul>
-                  {sources}
-                </ul>
+              <div className = 'tierContainer'>
+                  <h1 className = 'tierTitle'>Tier 1</h1>
+                  <ul className = "tiers">
+                    {sources}
+                  </ul>
+                </div>
             );
           }
         

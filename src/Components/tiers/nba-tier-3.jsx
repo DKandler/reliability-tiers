@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../tiers.css'
 import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import firebaseConfig from '../firebase';
@@ -24,9 +25,12 @@ class NBATier3 extends React.Component {
             });
         
             return (
-                <ul>
-                  {sources}
-                </ul>
+              <div className = 'tierContainer'>
+              <h1 className = 'tierTitle'>Tier 3</h1>
+              <ul className = "tiers">
+                {sources}
+              </ul>
+            </div>  
             );
           }
         

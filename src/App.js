@@ -5,6 +5,7 @@ import SoccerTiers from './Components/soccer-tiers';
 import NBATiers from './Components/nba-tiers'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
+
 function App() {
   return (
     <div className="App">
@@ -15,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+

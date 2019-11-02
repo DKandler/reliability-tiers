@@ -5,12 +5,26 @@ import NBATier1 from './tiers/nba-tier-1';
 import SoccerTier1 from './tiers/soccer-tier-1';
 import TableHeader from './table-header';
 
-export default class Mainpage extends React.Component{
+
+import withFirebaseAuth from 'react-with-firebase-auth'
+import * as firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import firebaseConfig from './firebase';
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+
+class Mainpage extends React.Component{
     render(){
         return(
             <div>
                 <header>
-                    <Header />
+                <Header 
+                    user={this.props.user}
+                    signInWithGoogle={this.props.signInWithGoogle}
+                    signOut={this.props.signOut} 
+                    />
                     <NavBar />
                 </header>
                 <div>
@@ -32,4 +46,15 @@ export default class Mainpage extends React.Component{
 
         )
     }
+
 }
+const firebaseAppAuth = firebaseApp.auth();
+
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
+
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(Mainpage);

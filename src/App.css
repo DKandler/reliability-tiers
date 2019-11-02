@@ -3,6 +3,10 @@
   background: #FAFAFA;
 }
 
+.topTierText{
+  padding: 10px;
+  color: #004a7c;
+}
 .NavBar{
   width: 80%;
   display: flex;

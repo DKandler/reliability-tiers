@@ -30,12 +30,12 @@ class Mainpage extends React.Component{
                 </header>
                 <div>
                     <div className = "tier1">
-                        <h3>Top Tier NBA Sources</h3>
+                        <h3 className = 'topTierText'>Top Tier NBA Sources</h3>
                         {/* <TableHeader /> */}
                         <NBATier1 />
                     </div>  
                     <div className  = "tier1" >
-                        <h3>Top Tier Soccer Sources</h3>
+                        <h3 className = 'topTierText'>Top Tier Soccer Sources</h3>
                         {/* <TableHeader /> */}
                         <SoccerTier1 />
                     </div>

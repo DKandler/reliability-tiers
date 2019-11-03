@@ -19,7 +19,7 @@ class NBATier5 extends React.Component {
             var sources = this.state.sources.map(function(source) {
               return (
                 <li key="{source.name}">
-                  <a href={source.twitter}>{source.name}</a>
+                  <a href={source.twitter} target="_blank">{source.name}</a>
                 </li>
               );
             });

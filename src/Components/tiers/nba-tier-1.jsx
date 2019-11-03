@@ -19,7 +19,7 @@ class NBATier1 extends React.Component {
             var sources = this.state.sources.map(function(source) {
               return (
                 <li key="{source.name}">
-                  <a className = 'tierItem' href={source.twitter}>{source.name}</a>
+                  <a className = 'tierItem' href={source.twitter} target="_blank">{source.name}</a>
                 </li>
               );
             });

@@ -8,6 +8,11 @@ import TableHeader from './table-header';
 import Header from './main-header';
 import NavBar from './nav-bar';
 
+import withFirebaseAuth from 'react-with-firebase-auth'
+import * as firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import firebaseConfig from './firebase';
 
 export default function SoccerTiers(props){
     return(

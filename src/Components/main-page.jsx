@@ -13,7 +13,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import firebaseConfig from './firebase';
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+
 
 
 class Mainpage extends React.Component{
@@ -22,9 +22,7 @@ class Mainpage extends React.Component{
             <div>
                 <header className = "header">
                 <Header 
-                    user={this.props.user}
-                    signInWithGoogle={this.props.signInWithGoogle}
-                    signOut={this.props.signOut} 
+                   
                     />
                     <NavBar />
                 </header>
@@ -49,13 +47,5 @@ class Mainpage extends React.Component{
     }
 
 }
-const firebaseAppAuth = firebaseApp.auth();
 
-const providers = {
-  googleProvider: new firebase.auth.GoogleAuthProvider(),
-};
-
-export default withFirebaseAuth({
-  providers,
-  firebaseAppAuth,
-})(Mainpage);
+export default (Mainpage);

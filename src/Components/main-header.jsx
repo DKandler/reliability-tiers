@@ -6,16 +6,13 @@ import 'firebase/auth';
 import firebaseConfig from './firebase';
 import { Link } from 'react-router-dom';
 import '../header.css'
+import Login from './login';
 
-
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 class Header extends React.Component {
   render() {
-    const {
-      user,
-      signOut,
-      signInWithGoogle,
-    } = this.props;
+   
   
     return (
       <div className = 'header-container'>
@@ -24,24 +21,27 @@ class Header extends React.Component {
             <h1><Link className = 'title' to = '/'>Reliability Tiers</Link></h1>
             <p className = "title-text">See if your source is reliable.</p>
           </div>
-        <div className = 'welcome-container'>
-          {
-          user 
-          ? <p>Hello, <strong>{user.displayName}</strong> </p>
-          : <p>Please sign in.</p>
-      }
+          <div>
+            <Login 
+             user={this.props.user}
+             signInWithGoogle={this.props.signInWithGoogle}
+             signOut={this.props.signOut} 
+             />
+          </div>
        
-       
-      {
-        user
-          ? <button  onClick={signOut}>Sign out</button>
-          : <button onClick={signInWithGoogle}>Sign in with Google</button>
-      }
-      </div>
         </div>
        
     );
 }
 };
 
-export default Header;
+const firebaseAppAuth = firebaseApp.auth();
+
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
+
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(Header);

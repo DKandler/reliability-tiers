@@ -1,0 +1,39 @@
+.tierContainer{
+    display: flex;
+    width: 80vw;
+    border-bottom: solid 1px #004A7C;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.tierTitle{
+    font-family: 'Rokkitt', serif;
+    text-decoration: none;
+    color: #004a7c;
+    width: 15vw;
+    margin: 0px;
+    background: #E8F1F5;
+    padding: 10px;
+    border-right: solid 1px #004A7C;
+}
+.tiers{
+    margin: auto;
+    display: flex;
+    background: #fafafa; 
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: #004a7c;
+    list-style: none;
+    color: #004A7C;
+}
+

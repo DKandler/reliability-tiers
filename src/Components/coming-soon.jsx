@@ -7,19 +7,11 @@ import NavBar from './nav-bar';
 const ComingSoon = () => {
     return(
     <div>
+           <Header />
+           <NavBar />
         <div className="bgimg">
-            <div className="topleft">
-                    <Header />
-                    
-            </div>
             <div className="middle">
                 <h1>COMING SOON</h1>
-                <hr></hr>
-                <p></p>
-            </div>
-            <div className="bottomleft">
-                <p>MLB, NFL, and NHL tiers coming soon!</p>
-                <NavBar />
             </div>
         </div>
 

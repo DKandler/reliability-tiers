@@ -11,11 +11,11 @@
 
 }
 
-.welcome-container{
+.App-header{
     margin: 13px;
 }
 
-.welcome-container button{
+.App-header button{
     background: transparent;
 	color: inherit;
 	text-decoration: none;
@@ -27,7 +27,7 @@
 
 }
 
-.welcome-container button:hover{
+.App-header button:hover{
     background: #004A7C;
     color:#FAFAFA;
 

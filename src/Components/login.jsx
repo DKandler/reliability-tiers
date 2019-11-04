@@ -1,4 +1,5 @@
 import React from 'react';
+import '../header.css'
 
 class Login extends React.Component {
     render() {
@@ -19,7 +20,7 @@ class Login extends React.Component {
                     {
                         user
                             ? <button className = "signOut"  onClick={signOut}>Sign out</button>
-                            : <img className = "signIn" onClick={signInWithGoogle} src="../google.png"></img>
+                            : <button className = "signIn" onClick={signInWithGoogle} src="../google.png">Sign In</button>
                     }
                 </header>
             </div>

@@ -14,7 +14,7 @@ class Login extends React.Component {
                 <header className="App-header">
                     {
                         user
-                            ? <p className = "signInText">Hello, {user.displayName}</p>
+                            ? <p className = "signInText">Hello, <strong>{user.displayName}</strong></p>
                             : <p className = "signInText">Please sign in.</p>
                     }
                     {

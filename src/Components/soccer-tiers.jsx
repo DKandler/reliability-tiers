@@ -19,11 +19,15 @@ export default function SoccerTiers(props){
         <div>
             <Header />
             <NavBar />
+            <div>
+                <h1 className = 'sportsheader'>Soccer</h1>
+            </div>
             <SoccerTier1 />
             <SoccerTier2 />
             <SoccerTier3 />
             <SoccerTier4 />
             <SoccerTier5 />
+            <div classname='bottompadding'> </div>
         </div>
         
 

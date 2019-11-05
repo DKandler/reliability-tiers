@@ -3,9 +3,67 @@
   background: #FAFAFA;
 }
 
-.topTierText{
-  padding: 10px;
+.howto{
+  width: 100vw;
+  margin: 10vh 0px 0px 0px;
+  background: #E8F1F5;
+}
+
+.howToContainer{
+  margin-top: 10vh; 
+  background: #E8F1F5;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 80vw;
   color: #004a7c;
+  padding-bottom: 30px;
+}
+.howToContainer li strong{
+  font-family: 'Rokkitt', serif;
+  font-size: 1.6em;
+  padding-right: 10px;
+}
+.howToContainer ul{
+  padding: 0px;
+  list-style: none;
+}
+.howToContainer li{
+  padding: 10px;
+}
+.howToContainer h3{
+  font-family: 'Rokkitt', serif;
+  padding: 0px;
+  font-size: 1.6em;
+  text-decoration: underline;
+}
+.howToContainer p{
+  padding: 0px;
+  margin: 0px;
+}
+
+.sportsheader{
+  letter-spacing: 3px;
+  padding: 3vh;
+  width: 80vw;
+  margin: auto;
+  font-family: 'Rokkitt', serif;
+  color: #004a7c;;
+  display: flex;
+  justify-content: left;
+  font-size: 1.9em;
+  text-decoration: underline;
+}
+.topTierText{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  display: flex;
+  width: 80vw;
+  color: #004a7c;
+  text-decoration: underline;
+  
 }
 .NavBar{
   width: 80%;
@@ -56,9 +114,11 @@ body, html {
 
 /* Position text in the middle */
 .middle h1{
+  margin: 0px;
+  padding-right: 0px;
+  padding-left: 0px; 
   margin-top: 30vh;
-  background: rgba(232, 241, 245, 0.75);;
-  width: 100%;
+  background: rgba(232, 241, 245, 0.75);
   font-family: 'Rokkitt', serif;
   text-decoration: none;
   color: #004a7c;
@@ -68,7 +128,7 @@ body, html {
 }
 .middle {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /* position: absolute;
   top: 50%;
   left: 50%;

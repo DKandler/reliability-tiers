@@ -22,11 +22,15 @@ export default function NBATiers(props) {
         <div>
             <Header />
             <NavBar />
+            <div>
+                <h1 className = 'sportsheader'>NBA</h1>
+            </div>
             <NBATier1 />
             <NBATier2 />
             <NBATier3 />
             <NBATier4 />
             <NBATier5 />
+            <div classname='bottompadding'></div>
         </div>
 
 

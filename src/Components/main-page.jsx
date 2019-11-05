@@ -12,7 +12,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import firebaseConfig from './firebase';
-
+import HowTo from './howto.jsx'
 
 
 
@@ -26,17 +26,21 @@ class Mainpage extends React.Component{
                     />
                     <NavBar />
                 </header>
+               
                 <div>
                     <div className = "tier1">
-                        <h3 className = 'topTierText'>Top Tier NBA Sources</h3>
+                        <h3 className = 'topTierText'>Most reliable NBA news</h3>
                         {/* <TableHeader /> */}
                         <NBATier1 />
                     </div>  
                     <div className  = "tier1" >
-                        <h3 className = 'topTierText'>Top Tier Soccer Sources</h3>
+                        <h3 className = 'topTierText'>Most reliable Soccer news</h3>
                         {/* <TableHeader /> */}
                         <SoccerTier1 />
                     </div>
+                    <div className = 'howto'>
+                    <HowTo />
+                    </div>   
                     
                 </div>
                 

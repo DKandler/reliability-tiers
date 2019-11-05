@@ -12,7 +12,7 @@
 }
 
 .App-header{
-    margin: 13px;
+    margin: 40px 13px 25px 13px;
 }
 
 .App-header button{
@@ -34,7 +34,7 @@
 }
 
 .title-text{
-    margin: 13px;
+    margin: 0px 13px 13px 13px;;
     margin-top: 0px;
     font-family: 'Rokkitt', serif;
     font-weight: 100;

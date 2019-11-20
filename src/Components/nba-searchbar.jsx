@@ -1,4 +1,5 @@
 import React from 'react';
+import firebaseConfig from './firebase';
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import Select from 'react-select';
@@ -7,7 +8,6 @@ import '../searchbar.css'
 const options = [];
 var db = firebase.firestore();
 var NBARef = db.collection("NBASources");
-var SoccerRef = db.collection("SoccerSources");
 
 NBARef.get().then((data) => {
     data.forEach((doc) => {
@@ -15,13 +15,7 @@ NBARef.get().then((data) => {
     })
 })
 
-SoccerRef.get().then((data) => {
-    data.forEach((doc) => {
-        options.push({label: doc.data().name, value: doc.data().name})
-    })
-})
-
-class Searchbar extends React.Component {
+class NBASearchbar extends React.Component {
     constructor(props){
     super(props);
         this.state={
@@ -46,7 +40,9 @@ class Searchbar extends React.Component {
               />
               </div>
             );
-        }  
+        }
+
+     
 }
 
-export default Searchbar;
+export default NBASearchbar;

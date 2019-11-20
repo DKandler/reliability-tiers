@@ -1,10 +1,9 @@
 import React from 'react';
 import '../../tiers.css'
-import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
-import firebaseConfig from '../firebase';
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
+import Window from '../modal'
 
 class NBATier2 extends React.Component {
     constructor(props){
@@ -19,8 +18,8 @@ class NBATier2 extends React.Component {
             var sources = this.state.sources.map(function(source) {
               return (
                 <li key="{source.name}">
-                  <a href={source.twitter} target="_blank">{source.name},</a>
-                </li>
+                <a className = 'tierItem' target="_blank"><Window name={source.name} tier = '2' twitter={source.twitter} score={(source.score / source.votes).toFixed(2)}/></a>
+              </li>
               );
             });
         

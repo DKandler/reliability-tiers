@@ -38,4 +38,15 @@ a{
     list-style: none;
     color: #004A7C;
 }
+.tierItem{
+    opacity: .8;
+    padding: 2px 5px 2px 5px;
+}
+.tierItem:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 
+li{
+    padding: 0px;
+}

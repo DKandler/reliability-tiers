@@ -7,6 +7,7 @@ import SoccerTier5 from './tiers/soccer-tier-5';
 import Header from './main-header';
 import NavBar from './nav-bar';
 import SoccerSearchbar from './soccer-searchbar'
+import '../App.css'
 
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -25,7 +26,7 @@ export default function SoccerTiers(props){
             <SoccerTier3 />
             <SoccerTier4 />
             <SoccerTier5 />
-            <div classname='bottompadding'> </div>
+            <div className='bottompadding'> </div>
         </div>
         
 

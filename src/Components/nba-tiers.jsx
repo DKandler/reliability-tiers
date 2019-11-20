@@ -7,6 +7,7 @@ import NBATier5 from './tiers/nba-tier-5';
 import Header from './main-header';
 import NavBar from './nav-bar';
 import NBASearchbar from './nba-searchbar'
+import '../App.css'
 
 import 'firebase/firestore';
 import 'firebase/auth';

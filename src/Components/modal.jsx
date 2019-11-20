@@ -40,7 +40,7 @@ class Window extends React.Component {
   render() {
     return (
       <div>
-       <a onClick={this.openModal}>{this.props.name}</a>
+       <a onClick={this.openModal}>{this.props.name},</a>
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
@@ -48,7 +48,7 @@ class Window extends React.Component {
           contentLabel="Example Modal"
         >
           <div className = 'modal'>
-            <button onClick={this.closeModal}>&times;</button>
+            <button className ='x' onClick={this.closeModal}>&times;</button>
             <h2>{this.props.name}</h2> 
             <a href = {this.props.twitter} target="_blank">Twitter</a>
             <p>Tier: <strong>{this.props.tier}</strong></p>

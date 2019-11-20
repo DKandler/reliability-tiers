@@ -1,5 +1,4 @@
 import React from 'react';
-import firebaseConfig from './firebase';
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import Select from 'react-select';

@@ -3,10 +3,11 @@ import NavBar from './nav-bar';
 import Header from './main-header';
 import NBATier1 from './tiers/nba-tier-1';
 import SoccerTier1 from './tiers/soccer-tier-1';
-import TableHeader from './table-header';
 import '../tiers.css'
+import Searchbar from './searchbar'
+import Window from './modal'
 
-
+import Modal from 'react-modal';
 import withFirebaseAuth from 'react-with-firebase-auth'
 import * as firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -26,7 +27,7 @@ class Mainpage extends React.Component{
                     />
                     <NavBar />
                 </header>
-               
+               <Searchbar />
                 <div>
                     <div className = "tier1">
                         <h3 className = 'topTierText'>Most reliable NBA news</h3>

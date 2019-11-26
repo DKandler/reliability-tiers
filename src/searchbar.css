@@ -1,0 +1,47 @@
+
+.searchbar{
+    padding: 0px;
+    font-family: 'Rokkitt', serif;
+    margin-left: 10vw;
+    margin-top: 10px;
+    width: 40vw;
+    color: #004A7C;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 375px){
+    .searchbar{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .searchbar{
+        width: 288px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .searchbar{
+        width: 256px;   
+    }
+}
+@media screen and (max-width: 411px){
+    .searchbar{
+        width: 328.8px;
+    }
+}
+@media screen and (max-width: 320px){
+    select{
+        width: 256px;
+    }
+}
+@media screen and (max-width: 375px){
+    .searchbar{
+        width: 300px;
+    }
+}
+
+
+
+

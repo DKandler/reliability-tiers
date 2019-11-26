@@ -11,6 +11,18 @@
     
     
 }
+@media screen and (max-width: 360px) and (max-width: 640px){
+    .navItem {
+       font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) and (max-width: 812px){
+    .navItem {
+       font-size: 12px;
+    }
+}
+
 
 .listContainer{
     padding-left: 0px;

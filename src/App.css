@@ -1,5 +1,5 @@
 
-.body{
+body{
   background: #FAFAFA;
 }
 
@@ -54,6 +54,7 @@
   justify-content: left;
   font-size: 1.9em;
   text-decoration: underline;
+  padding-bottom: 0px;
 }
 .topTierText{
   padding-top: 30px;
@@ -140,4 +141,11 @@ body, html {
 hr {
   margin: auto;
   width: 40%;
+}
+.searchbar-container{
+  margin-top: 30px;
+  
+}
+.bottompadding{
+  height: 50px;
 }
